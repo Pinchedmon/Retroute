@@ -9,6 +9,7 @@
 #include <sys/sysctl.h>
 
 static const int kProxyPort = 10808;   // mihomo mixed port: HTTP and SOCKS on one port
+static NSString *const kDonateURL = @"https://widget.donatepay.ru/widgets/page/21d52433d9fb3f8cb58edf86617674cdbf21b21b05956b170322fd1f777c28a4?widget_id=7888887";
 
 #pragma mark - Device identity
 
@@ -475,6 +476,7 @@ static NSData *ConfigData(NSDictionary *config) {
     [menu addItemWithTitle:@"Добавить подписку или ссылки…" action:@selector(addSubscription:) keyEquivalent:@""];
     [menu addItemWithTitle:@"Открыть лог" action:@selector(openLog:) keyEquivalent:@""];
     [menu addItem:[NSMenuItem separatorItem]];
+    [menu addItemWithTitle:@"Поддержать автора…" action:@selector(donate:) keyEquivalent:@""];
     [menu addItemWithTitle:@"Выход" action:@selector(quit:) keyEquivalent:@"q"];
     for (NSMenuItem *mi in menu.itemArray) mi.target = self;
     for (NSMenuItem *mi in srv.submenu.itemArray) mi.target = self;
@@ -663,6 +665,10 @@ static NSData *ConfigData(NSDictionary *config) {
             [self runNetworksetup:@[@"-setsocksfirewallproxystate", svc, @"off"]];
         }
     }
+}
+
+- (void)donate:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:kDonateURL]];
 }
 
 - (void)quit:(id)sender { [NSApp terminate:nil]; }
