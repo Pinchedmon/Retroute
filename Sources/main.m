@@ -9,7 +9,7 @@
 #include <sys/sysctl.h>
 
 static const int kProxyPort = 10808;   // mihomo mixed port: HTTP and SOCKS on one port
-static NSString *const kDonateURL = @"https://widget.donatepay.ru/widgets/page/21d52433d9fb3f8cb58edf86617674cdbf21b21b05956b170322fd1f777c28a4?widget_id=7888887";
+static NSString *const kDonateURL = @"https://new.donatepay.ru/donate/1536180";
 
 #pragma mark - Device identity
 

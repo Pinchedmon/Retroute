@@ -61,7 +61,7 @@ build/Retroute.app/Contents/MacOS/Retroute --hwid              # HWID, верс�
 
 ## Поддержать проект
 
-Если Retroute вернул к жизни ваш старый Мак — можно [поддержать автора](https://widget.donatepay.ru/widgets/page/21d52433d9fb3f8cb58edf86617674cdbf21b21b05956b170322fd1f777c28a4?widget_id=7888887). Спасибо!
+Если Retroute вернул к жизни ваш старый Мак — можно [поддержать автора](https://new.donatepay.ru/donate/1536180). Спасибо!
 
 ## Лицензия
 
@@ -85,6 +85,6 @@ A minimal menu-bar proxy client for **old Intel Macs running macOS 10.13 High Si
 
 **Privacy:** no telemetry. Subscription requests go only to your URL and include `x-hwid` (truncated SHA-256 of the hardware UUID), OS version and Mac model.
 
-**Support:** if Retroute keeps your old Mac useful, you can [support the author](https://widget.donatepay.ru/widgets/page/21d52433d9fb3f8cb58edf86617674cdbf21b21b05956b170322fd1f777c28a4?widget_id=7888887).
+**Support:** if Retroute keeps your old Mac useful, you can [support the author](https://new.donatepay.ru/donate/1536180).
 
 **License:** GPL-3.0-or-later. Bundles mihomo (GPL-3.0) unmodified. Not affiliated with Happ, MetaCubeX or Apple.
